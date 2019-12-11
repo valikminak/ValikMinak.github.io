@@ -2,4 +2,4 @@
 Мои домашние задания
 
 
-[Урок 6](https://valikminak.github.io/Site1/" - Выполнил ")
+[Урок 6](https://valikminak.github.io/Site1/"Выполнил ")
