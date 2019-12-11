@@ -1,0 +1,1 @@
+# ValikMinak.github.io
