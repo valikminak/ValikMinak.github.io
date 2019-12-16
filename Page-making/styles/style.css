@@ -130,6 +130,17 @@ section {
   color: #fff;
   border: none;
   text-transform: uppercase;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #dd9c01;
+}
+
+button, input, a:focus {
+  outline: none;
 }
 
 .phone-block {
@@ -146,6 +157,10 @@ section {
   color: #1a1820;
 }
 
+.phone-link:hover {
+  text-decoration: none;
+}
+
 .wrap {
   display: table;
   width: 100%;
@@ -156,5 +171,29 @@ section {
   text-align: right;
   display: table-cell;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 991px) {
+  .main-content h1 {
+    padding-left: 10%;
+  }
+  .main-subtitle {
+    padding-left: 10%;
+  }
+  .main span {
+    margin-left: 10%;
+  }
+  .main span strong {
+    font-family: 'ProximaNov_bold' sans-serif;
+  }
+  .main-trigger {
+    padding: 5rem 10%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .phone-link {
+    color: red;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -75,6 +75,7 @@ section{
       } 
       
   }
+  
   // Подзаголовок
   &-subtitle{
     margin-bottom: 4rem;
@@ -170,7 +171,23 @@ section{
   color: $light;
   border: none;
   text-transform: uppercase;
+  transition: all 0.2s;
+
+  &:hover{
+    cursor: pointer;
+    background-color: darken($btn-color,5%) ;
+  }
 }
+
+button, input, a:focus{
+  
+  outline: none;
+  
+}
+
+
+
+
 
 .phone{
   &-block{
@@ -184,6 +201,9 @@ section{
   height: 7rem;
   line-height: 7rem;
   color: $text;
+ &:hover{
+  text-decoration: none;
+ }
 }
 
 }
@@ -199,3 +219,6 @@ height: 7rem;
 }
 }
 
+
+
+@import 'media';
