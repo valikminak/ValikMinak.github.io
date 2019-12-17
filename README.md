@@ -9,4 +9,4 @@
 [Модуль 5. Урок № 15](https://ValikMinak.github.io/DZHZ/) - Урок №15. Псевдоклассы и псевдоэлементы  
 [Модуль 5. Практика. Часть 3.](https://ValikMinak.github.io/Page-making/) - Эффекты при наведении и адаптив первого экрана  
 [Модуль 5. Урок № 16](https://ValikMinak.github.io/Slide/) - Урок №16. Слайдер на сайте  
-[Модуль 5. Практика. Часть 4.]((https://ValikMinak.github.io/Page-making-slide/) - Адаптация слайдов
+[Модуль 5. Практика. Часть 4.](https://ValikMinak.github.io/Page-making-slide/) - Адаптация слайдов
