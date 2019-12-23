@@ -1,0 +1,103 @@
+@media screen and (max-width:1199px){
+
+}
+
+@media screen and (max-width:991px){
+
+.header-btn{
+  
+}
+
+
+  .phone{
+    &-block{
+      
+    }
+    &-link{
+   
+   &:hover{
+   
+   }
+  }
+  
+  }
+
+  
+  .main{
+  
+    &-content{
+      
+      // Главный заголовок
+      h1{
+        padding-left: 10%;
+        } 
+        
+    }
+    
+    // Подзаголовок
+    &-subtitle{
+      padding-left: 10%;
+    }
+    // Зелёный ярлык
+    span{
+     margin-left:10%;
+      // Цифра "300" рублей
+      strong{
+        @include bold;
+      }
+    }
+  
+    // Оплата поп факту
+    &-trigger{
+     padding: 5rem 10%;
+    }
+    
+    &-form{
+      
+        // Заголовок формы
+  
+  
+      &-header {
+        
+        }
+      
+      }
+      // Поле для ввода
+    
+      &-input{
+      
+      }
+      
+      label{
+        
+       
+      }
+      // Кнопка отправить заявку
+      &-btn{
+       
+  
+      }
+      // Подпись под кнопкой
+      small{
+        
+      }
+  
+  
+    }
+
+  
+  }
+
+  @media screen and (max-width:575px){
+    .logo{
+      margin-left: 50%;
+    
+  }
+  .phone-block{
+    margin-left: 15%;
+  }
+  .wrap{
+    margin-left: 33%;
+    padding-bottom: 4rem;
+  }
+  }
