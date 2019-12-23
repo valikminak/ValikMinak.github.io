@@ -1,0 +1,16 @@
+.container{
+  margin-top: 5rem;
+}
+
+.modal-title{
+  color: aqua;
+}
+
+
+ .modal-header{
+  background-color: red;
+}
+.modal-footer button{
+  
+  color: rebeccapurple;
+}
