@@ -1,0 +1,398 @@
+*{box-sizing: border-box;}
+// Fonts Family
+@font-face {
+  font-family: 'ProximaNova_bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+      url('../fonts/ProximaNova-Bold.woff') format('woff'),
+      url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+      url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNov_reg';
+  src: url('../fonts/ProximaNovaCond-Regular.eot');
+  src: url('../fonts/ProximaNovaCond-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ProximaNovaCond-Regular.woff2') format('woff2'),
+      url('../fonts/ProximaNovaCond-Regular.woff') format('woff'),
+      url('../fonts/ProximaNovaCond-Regular.ttf') format('truetype'),
+      url('../fonts/ProximaNovaCond-Regular.svg#ProximaNovaCond-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin reg(){
+  
+  font-family: 'ProximaNov_reg' sans-serif;
+}
+
+@mixin bold(){
+  font-family: 'ProximaNov_bold' sans-serif;
+}
+
+
+
+$btn-color:#f6ae01;
+$icons-color:#45b713;
+$text:#1a1820;
+$danger:#ff0000;
+$bg-light:#f5f5f5;
+$light:#fff;
+$border-input:#dddddd;
+
+body{
+  @include reg;
+ } 
+
+// basic settings
+
+html{
+  font-size: 10px;
+
+}
+
+// typography
+section{
+  padding: 10rem 0;
+}
+
+.main{
+  padding: 3rem 0 5rem;
+  background: #fff url(../img/jpg/1.1.jpg) center center no-repeat;
+  background-size: cover;
+  &-content{
+    line-height: 1.45rem;
+    margin-top: 10rem;
+    // Главный заголовок
+    h1{
+    line-height: 1.45;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    @include bold;
+      } 
+      
+  }
+  
+  // Подзаголовок
+  &-subtitle{
+    margin-bottom: 4rem;
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+  // Зелёный ярлык
+  span{
+    display: inline-block;
+    padding: 3rem 5rem;
+    font-size: 1.8rem;
+    color: $light;
+    background-color: $icons-color;
+    text-align: center;
+    // Цифра "300" рублей
+    strong{
+      @include bold;
+    }
+  }
+
+  // Оплата поп факту
+  &-trigger{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    @include bold;
+    display: block;
+    margin-top: 3rem;
+  }
+  
+  &-form{
+    background-color: $light;
+    padding: 4rem 5rem;
+    text-align: center;
+      // Заголовок формы
+
+
+    &-header {
+      width: 264px;
+      margin-bottom: 4rem;
+      font-size: 1.8rem;
+      strong{
+        font-size: 1.9rem;
+      }
+    
+    }
+    // Поле для ввода
+  
+    &-input{
+      margin: 0.9rem 0;
+      display: block;
+      width: 100%;
+      border: solid 1px $border-input;
+      padding: 1.5rem;
+      border-radius: 5px;
+    }
+    
+    label{
+      font-size: 1.3rem;
+      position: absolute;
+      left:50%;
+      transform: translateX(-50%) translateY(-52%);
+      padding: 0.1rem;
+      background-color: $light;
+     
+    }
+    // Кнопка отправить заявку
+    &-btn{
+      width: 100%;
+      display: block;
+      height: 5.5rem;
+      font-size: 1.6rem;
+
+    }
+    // Подпись под кнопкой
+    small{
+      display: block;
+      margin-top: 1.5rem;
+    }
+
+
+  }
+}
+
+
+
+.header{
+  height: 7rem;
+}
+.button{
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  background-color: $btn-color;
+  color: $light;
+  border: none;
+  text-transform: uppercase;
+  transition: all 0.2s;
+
+  &:hover{
+    cursor: pointer;
+    background-color: darken($btn-color,5%) ;
+  }
+}
+
+button, input, a:focus textarea{
+  
+  outline: none;
+  
+}
+
+
+
+
+
+.phone{
+  &-block{
+    text-align: right;
+  }
+  &-link{
+  display: inline-block;
+  @include bold;
+  font-size: 1.92rem;
+  font-weight: 700;
+  height: 7rem;
+  line-height: 7rem;
+  color: $text;
+ &:hover{
+  text-decoration: none;
+ }
+}
+
+}
+
+.wrap{
+display: table;
+width: 100%;
+height: 7rem;
+&-block{
+  text-align: right;
+  display: table-cell;
+  vertical-align: middle;
+}
+}
+
+    // Оформление секции с преимущуствами
+
+
+.prev{
+  background: url(../img/svg/Left.svg) center no-repeat;
+  left: 0;
+  background-size: 70%;
+  top: 50%;
+  transform: scaleY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.next{
+  right: 0;
+  background: url(../img/svg/right.svg) center no-repeat;
+  background-size: 70%;
+  top: 50%;
+  transform: scaleY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+
+    section{
+    padding: 10rem 0;
+  }
+  .section-header{
+    @include bold();
+    text-align: center;
+    margin: 1rem 0 10rem 0;
+  }
+   .feautures{
+     
+     &-block{
+       text-align: center;
+       outline: none;
+      h2{
+        font-size: 2rem;
+        @include bold();
+        margin-bottom: 3rem;
+      }
+      p{
+        display: inline-block;
+        font-size: 1.4rem;
+        width: 80%;
+        
+      }
+      }
+     &-img{
+      height: 8rem;
+      margin-bottom: 3rem;
+     
+     img{
+       display: block;
+       margin: 0 auto;
+       
+     }
+   }
+}
+  
+  //  оформление всплывающих окон
+.popup{ 
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+    &-content{
+    left: 50%;
+    top: 10%;
+    background-color: $light;
+    transform: translateX(-50%);
+    padding: 4rem 6rem;
+    position: fixed;
+    }
+    &-form{
+      margin-top: 3rem;
+      padding: 0;
+    }
+    &-close{
+      position: absolute;
+      top: -1.8rem;
+      right: -2rem;
+      width: 2rem;
+      text-align: center;
+      border: none;
+      background-color: transparent;
+      font-size: 3rem;
+      color: $light;
+    }
+    &-content{
+      text-align: center;
+    }
+    &-header{
+      font-weight: bold;
+    }
+  }
+      
+.prices{
+  background: $icons-color url(../img/jpg/1.2.jpg) center;
+  
+}
+.price-info{
+  color: $light;
+  font-weight: bold;
+  font-size: 26px;
+}
+.info-price{
+  color: $light;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.price__images{
+  
+ 
+}
+
+.price__block{
+  background-color: $light;
+  text-align: center;
+  padding: 1rem 2.5rem 4rem;
+  min-height: 50rem;
+  & h2{
+    margin: 2rem 0;
+    font-size: 1.9rem;
+  }
+  & img{
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  & h3{
+    font-size: 1.9rem;
+    @include bold;
+    display: block;
+    margin-bottom: 2rem;
+    
+  }
+}
+.price-list{
+  min-height: 14rem;
+  list-style: none;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  & li{
+    &::before{
+      content: "";
+      display: inline-block;
+      margin-right: 1rem;
+      width: 1.4rem;
+      height: 1.4rem;
+      background: url(../img/png/gala.png) no-repeat center;
+      vertical-align: middle;
+      background-size: 80%;
+    }
+  }
+}
+
+
+
+
+
+
+@import 'media';
