@@ -390,6 +390,36 @@ height: 7rem;
   }
 }
 
+.feedback{
+  background: url(../img/jpg/feedback.jpg) no-repeat center;
+  background-size: cover;
+&-prev-btn{
+  left: -4rem;
+}
+&-next-btn{
+  right: -4rem;
+}
+  &-slider{
+    box-shadow: 0px 12px 18px 0px rgba(0, 0, 0, 0.11);
+    background-color: $light;
+    padding: 5rem 6rem;
+    p{
+      font-size: 1.6rem;
+    }
+    &-btn{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4rem;
+      height: 5rem;
+      background-color: $icons-color;
+      border: none;
+      & img{
+        width: 50%;
+      }
+    }
+  }
+}
 
 
 
