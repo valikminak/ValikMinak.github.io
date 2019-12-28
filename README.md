@@ -12,4 +12,5 @@
 [Модуль 5. Практика. Часть 4.](https://ValikMinak.github.io/Page-making-slide/) - Адаптация слайдов  
 [Модуль 5. Урок № 17](https://ValikMinak.github.io/Slids/) - Всплывающие окна  
 [Модуль 5. Практика. Часть 5.](https://ValikMinak.github.io/Show/) - Подключить окно к кнопке в шапке сайта  
-[Модуль 5. Практика. Часть 6.](https://ValikMinak.github.io/Sho23w/) - Верстка блока с ценами
+[Модуль 5. Практика. Часть 6.](https://ValikMinak.github.io/Sho23w/) - Верстка блока с ценами  
+[Модуль 6. Практика. Часть 7.](https://ValikMinak.github.io/Sho23w/) - Верстка блока с отзывами
