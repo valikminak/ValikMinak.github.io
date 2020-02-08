@@ -16,4 +16,5 @@
 [Модуль 6. Практика. Часть 7.](https://ValikMinak.github.io/Sho23w/) - Верстка блока с отзывами  
 [Модуль 6. Урок № 20](https://ValikMinak.github.io/GloVideo/) - Видео-фон на сайте  
 [Пробный](https://ValikMinak.github.io/first/) - Пробный сайт  
-[Сайт с анимацией](https://ValikMinak.github.io/GoSerfBro/) - Анимация
+[Сайт с анимацией](https://ValikMinak.github.io/GoSerfBro/) - Анимация  
+[UpRock](https://ValikMinak.github.io/UpRock/) - Анимация
