@@ -2698,6 +2698,7 @@ ul, p {
   .tasks-decision {
     display: block;
     width: 25%;
+    margin-left: 10px;
   }
   .tasks-bussines {
     font-size: 18px;
@@ -2739,6 +2740,12 @@ ul, p {
   .social-skills {
     display: none;
   }
+  .clients {
+    margin-left: 10px;
+  }
+  .go-work {
+    margin-left: 10px;
+  }
 }
 
 @media (max-width: 413px) {
@@ -2767,6 +2774,7 @@ ul, p {
   }
   .go-work {
     font-size: 20px;
+    margin-left: 10px;
   }
   .go-work-title::after {
     margin-left: -5px;
