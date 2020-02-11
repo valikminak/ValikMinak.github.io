@@ -1,23 +1,17 @@
-@import "fonts";
-@import "global";
-
 // .main {
 //   background-image: url(../images/hero-bg.png);
 // }
 
-*{
-  box-sizing: border-box;
-
-  
-}
-
 svg {
   display: block;
 }
+
 .main video {
+  margin: 0 auto;
   width: 100%;
-  height: 100%;
+  height: 749px;
   left: 0;
+  right: 0;
   top: 0;
   object-fit: cover;
   position: absolute;
@@ -29,25 +23,13 @@ svg {
 }
 .container__main {
   border-bottom: 1px solid #000000;
+  padding-bottom: 30px;
 }
 .header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding-top: 63px;
-}
-#header-logo{
-width:164px;
-height:30px;
-position:absolute;
-top:59px;
-left:200px;
--moz-transition: transform 1s; 
--webkit-transition: transform 1s;  
--ms-transition: transform 1s;  
--o-transition: transform 1s;  
-transition: transform 1s;  
-
 }
 
 .header-menu {
@@ -93,6 +75,9 @@ transition: transform 1s;
   color: #ffffff;
 }
 
+.section-white {
+  background-color: #ffffff;
+}
 .achievements {
   display: flex;
   font-family: "SF Pro Display";
@@ -115,13 +100,23 @@ transition: transform 1s;
 }
 .hero-achiev {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 94px;
-  width: 545px;
 }
-.about-us {
-  width: 75px;
+.hero-achiev__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & + .hero-achiev__wrapper {
+    margin-left: 96px;
+  }
+
+  .about-us {
+    width: 75px;
+    & + .about-us {
+      margin-left: 96px;
+    }
+  }
   & span {
     font-size: 40px;
     line-height: 48px;
@@ -175,10 +170,8 @@ transition: transform 1s;
   &.active {
     display: block;
     padding-bottom: 230px;
-    
   }
 }
-
 
 .award-list__show-more {
   cursor: pointer;
@@ -295,6 +288,7 @@ transition: transform 1s;
   width: 442px;
   height: 100%;
 }
+
 .services-box__click {
   width: 50%;
   margin-left: 162px;
@@ -318,10 +312,9 @@ transition: transform 1s;
     margin-bottom: 25px;
   }
 }
+
 .box-study-product {
   display: none;
-}
-.box-study-product {
   &.active {
     padding-top: 116px;
     display: block;
@@ -380,7 +373,8 @@ transition: transform 1s;
   display: none;
 }
 .box-startups {
-  &.active {
+  &.active,
+  .slick-current {
     display: block;
     padding-top: 116px;
 
@@ -869,7 +863,7 @@ transition: transform 1s;
 .tasks {
   color: #ffffff;
 }
-.task-hire {
+.tasks-hire {
   font-size: 29px;
   line-height: 53px;
   padding: 200px 0 100px 0;
@@ -883,9 +877,6 @@ transition: transform 1s;
   }
 }
 .tasks-decision {
-  font-size: 24px;
-  line-height: 29px;
-
   display: flex;
   align-items: baseline;
   padding: 50px 0 60px 0;
@@ -976,10 +967,14 @@ transition: transform 1s;
   font-weight: 500;
   width: 600px;
 }
-
+.clients-list__wrapper{
+  display: flex;
+  width: 50%;
+}
 .clients-list {
   min-height: 675px;
-  width: 160px;
+  width: 50%;
+  
   & a {
     font-size: 28px;
     line-height: 56px;
@@ -1205,3 +1200,7 @@ transition: transform 1s;
     line-height: 34px;
   }
 }
+
+@import "fonts";
+@import "global";
+@import "medias";
