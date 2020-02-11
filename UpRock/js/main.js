@@ -77,6 +77,11 @@ $(".graphics").on("click", function() {
     .removeClass("active");
 });
 
+$(".header-menu__media").on("click", function() {
+  $(".header-menu").toggleClass("active");
+});
+
+
 $(document).ready(function() {
   $(".services-box__click").slick({
     responsive: [
